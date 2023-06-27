@@ -4,20 +4,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Echo</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <div>
+    <h1>Echo</h1>
+    <h2 onclick="toggle()">Filters</h2>
+      <div id="filters">
+        <h2 onclick="toptoggle()">Top</h2>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+        <div id="top-gen">
+        <p>Top Type</p>
+        <div class="top">
+        <input type="checkbox" id="long" value="long"> <label for="long">Long Sleeves</label>
+        <input type="checkbox" id="tshirt" value="tshirt"> <label for="tshirt"> T-shirt</label>
+        <input type="checkbox" id="tank" value="tank"> <label for="tank"> Tank top</label>
+        </div>
+        
+        <p>Top Fit</p>
+        <div class="top">
+        <input type="checkbox" id="slim" value="slim"> <label for="slim">Slim</label>
+        <input type="checkbox" id="wide" value="wide"> <label for="wide">Wide</label>
+        </div>
+        
+        <p>Top Color</p>
+        <div class="top">
+
+        <div class="top2">
+        <input type="checkbox" id="yellow" value="yellow"> <label for="yellow">Yellow</label>
+        <input type="checkbox" id="orange" value="orange"> <label for="orange">Orange</label>
+        <input type="checkbox" id="red" value="red"> <label for="red">Red</label>
+        <input type="checkbox" id="green" value="green"><label for="green">Green</label>
+        </div>
+        <div class="top2">
+        <input type="checkbox" id="blue" value="blue"><label for="blue">Blue</label>
+        <input type="checkbox" id="black" value="black"><label for="black">Black</label>
+        <input type="checkbox" id="white"   value="white"><label for="white">White</label>
+        <input type="checkbox" id="brown" value="brown"><label for="brown">Brown</label>
+        </div>
+         
+          
+        </div>
+
+        </div>
+        
+        <h2 onclick="btntoggle()">Bottom</h2>
+        
+        <div id="bottom-gen">
+        <p>Bottom Type</p>
+        <div class="bottom type">
+        <input type="checkbox" id="jeans" value="jeans"><label for="jeans">Jeans</label>
+        <input type="checkbox" id="shorts" value="shorts"><label for="shorts">Shorts</label>
+        <input type="checkbox" id="skirt" value="skirt"><label for="skirt">Skirt</label>
+        <input type="checkbox" id="cargo" value="cargo"><label for="cargo">Cargo</label>
+        </div>
+        
+        <p>Bottom Shade</p>
+        <div class="bottom shade">
+        <input type="checkbox" id="dark" value="dark"> <label for="dark">Dark</label>
+        <input type="checkbox" id="light" value="light"><label for="light">Light</label>
+        </div>
+
+        </div>
+
+      
+      </div>
+    
+    <h2>Elements</h2>
+      <div id="elements">
+        <input type="checkbox" id="top" value="top"><label for="top">Top</label>
+        <input type="checkbox" id="bottom" value="bottom"><label for="bottom">Bottom</label>
+        <input type="checkbox" id="jacket"  value="jacket"><label for="jacket">Jacket</label>
+        
+      </div>
+
+    
+
+    <h2>Outfit</h2>
+    <button id="generate">Generate</button>
+    <div id="outfit">
+      
+    </div>
+    <p><a href="clothes.html">All clothes</a></p>
+    
+  </div>
+  
+
 </body>
 
 </html>
